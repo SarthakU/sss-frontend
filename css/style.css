@@ -1,0 +1,115 @@
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  height: 1px; }
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: rgba(33, 33, 33, 0.5);
+  position: relative; }
+  .wrapper .image-underlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url("http://unsplash.it/1366/768?random");
+    z-index: -1; }
+
+#login-form {
+  margin-top: 5%;
+  text-align: center;
+  position: relative;
+  box-shadow: 5px 5px 10px black;
+  height: 70%;
+  padding: 0;
+  border-radius: 3px;
+  background: #37474F;
+  font-family: 'Lato';
+  font-weight: 300;
+  color: white; }
+  #login-form form > input, #login-form button {
+    width: 60%;
+    text-align: center;
+    height: 35px;
+    margin: 0 auto; }
+  #login-form form > input {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 18px;
+    background: #DDD;
+    color: black; }
+    ::-webkit-input-placeholder {
+      color: #222; }
+    :-moz-placeholder {
+      color: #222; }
+    ::-moz-placeholder {
+      color: #222; }
+    :-ms-input-placeholder {
+      color: #222; }
+  #login-form form > input.email {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px 6px 0 0; }
+  #login-form form > input.pass {
+    border-radius: 0 0 6px 6px; }
+  #login-form form > input:focus {
+    background: #FFF; }
+  #login-form form > button {
+    margin-top: 10px;
+    background: #01579B;
+    outline: none;
+    border: none;
+    box-shadow: none; }
+  #login-form .logo-container {
+    height: 42px;
+    margin: 30px 10% 50px; }
+    #login-form .logo-container > .logo {
+      display: inline-block;
+      background: url("../img/reddit.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 42px; }
+    #login-form .logo-container > .text {
+      flex: .9;
+      color: white;
+      font-family: 'Roboto Slab';
+      font-size: 26px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 0.2em;
+      line-height: 54px; }
+  #login-form .logo-container:hover > .logo {
+    background: url("../img/reddit-wink.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #login-form .or {
+    margin: 25px 0; }
+  #login-form .social-logins {
+    display: flex;
+    padding: 0 20%; }
+    #login-form .social-logins > div {
+      flex: 1;
+      font-size: 24px;
+      color: #666;
+      transition: 0.5s ease;
+      cursor: pointer;
+      background: #DDD;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      padding: 5px 0; }
+    #login-form .social-logins > div:hover {
+      box-shadow: 0 0 2px black;
+      background: white; }
+    #login-form .social-logins > .facebook:hover {
+      color: #3b5998; }
+    #login-form .social-logins > .twitter:hover {
+      color: #4099FF; }
+    #login-form .social-logins > .google:hover {
+      color: #EA4335; }
